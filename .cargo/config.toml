@@ -1,0 +1,9 @@
+paths = ["crates/pacman", "crates/appimage"] # path dependency overrides
+
+[alias]     # command aliases
+b = "build"
+c = "check"
+t = "test"
+r = "run"
+rr = "run --release"
+test-pacman = ["t", "-p", "pacman", "--", "--nocapture", "--test-threads=1"]
